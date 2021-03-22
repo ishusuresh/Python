@@ -5,6 +5,8 @@
 def sayHello(name='Sam'):
     print(f'Hello {name}')
 
+sayHello()    #calling the function
+# you can also pass 'Sam' while calling the function and have only name in the arg
 
 # Return values
 def getSum(num1, num2):
