@@ -1,8 +1,9 @@
 # A List is a collection which is ordered and changeable. Allows duplicate members.
+#similar to an array
 
 # Create list
 numbers = [1, 2, 3, 4, 5]
-fruits = ['Apples', 'Oranges', 'Grapes', 'Pears']
+fruits = ['Apples', 'Oranges', 'Grapes', 'Pears'] //its gonna start from 0
 
 # Use a constructor
 # numbers2 = list((1, 2, 3, 4, 5))
@@ -12,8 +13,6 @@ print(fruits[1])
 
 # Get the last value
 print(fruits[-1])
-
-
 
 # Get length
 print(len(fruits))
@@ -37,7 +36,7 @@ fruits.pop(2)
 fruits.reverse()
 
 # Sort list
-fruits.sort()
+fruits.sort()   //sort alphabetically
 
 # Reverse sort
 fruits.sort(reverse=True)
