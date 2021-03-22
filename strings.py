@@ -16,10 +16,10 @@ print(f'Hello, my name is {name} and I am {age}')
 
 # String Methods
 
-s = 'helloworld'
+s = 'hello world'
 
 # Capitalize string
-print(s.capitalize())
+print(s.capitalize())     //Helloworld
 
 # Make all uppercase
 print(s.upper())
@@ -41,16 +41,16 @@ sub = 'h'
 print(s.count(sub))
 
 # Starts with
-print(s.startswith('hello'))
+print(s.startswith('hello'))    //o/p ois True coz the string does start with this string
 
 # Ends with
 print(s.endswith('d'))
 
 # Split into a list
-print(s.split())
+print(s.split())    //['welcome', 'to', 'the', 'jungle']
 
 # Find position
-print(s.find('r'))
+print(s.find('r'))    //position number starts from 0 and no count for space
 
 # Is all alphanumeric
 print(s.isalnum())
@@ -60,3 +60,5 @@ print(s.isalpha())
 
 # Is all numeric
 print(s.isnumeric())
+
+//for both alpha and alphanum it will be False coz of space, get rid of space then True
