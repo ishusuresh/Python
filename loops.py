@@ -10,20 +10,20 @@ for person in people:
 for person in people:
   if person == 'Sara':
     break
-  print(f'Current Person: {person}')
+  print(f'Current Person: {person}')    o/p: John Paul, braks after Sara and comes out
 
 # Continue
 for person in people:
   if person == 'Sara':
     continue
-  print(f'Current Person: {person}')
+  print(f'Current Person: {person}')  //except Sara everything will be printed
 
 # range
 for i in range(len(people)):
   print(people[i])
 
 for i in range(0, 11):
-  print(f'Number: {i}')
+  print(f'Number: {i}')   //111 numbers 0 to 10
 
 # While loops execute a set of statements as long as a condition is true.
 
