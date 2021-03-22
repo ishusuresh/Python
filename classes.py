@@ -8,11 +8,14 @@ class User:
     self.name = name
     self.email = email
     self.age = age
+   
+  #Brad = User(pass the pars)
+  #print(Brad.age) //for accessing directly
     
     # Adding Encapsulation of variables... Encapsulation is the concept of making the variables non-accessible or accessible upto some extent from the child classes
     self._private = 1000 # Encapsulated variables are declares with '_' in the constructor.
 
-  def greeting(self):
+  def greeting(self):                                         //any method inside the class will have self coz thats how we access and Brad.greeting is how we call it
       return f'My name is {self.name} and I am {self.age}'
 
   def has_birthday(self):
@@ -23,7 +26,7 @@ class User:
       print(self._private)
 
 # Extend class
-class Customer(User):
+class Customer(User):       //In python we pass the class as a parameter for inheriting
   # Constructor
   def __init__(self, name, email, age):
       User.__init__(self, name, email, age) #Called proper parent class constructor to make this as proper child inehriting all methods.
@@ -36,7 +39,7 @@ class Customer(User):
       self.balance = balance
 
   def greeting(self):
-      return f'My name is {self.name} and I am {self.age} and my balance is {self.balance}'
+      return f'My name is {self.name} and I am {self.age} and my balance is {self.balance}'   //overwriting the above fn
 
 #  Init user object
 brad = User('Brad Traversy', 'brad@gmail.com', 37)
@@ -44,7 +47,7 @@ brad = User('Brad Traversy', 'brad@gmail.com', 37)
 janet = Customer('Janet Johnson', 'janet@yahoo.com', 25)
 
 janet.set_balance(500)
-print(janet.greeting())
+print(janet.greeting()) //it can access the parents methods too
 
 brad.has_birthday()
 print(brad.greeting())
